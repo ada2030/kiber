@@ -312,6 +312,12 @@ ul {
   margin: 0 0 5px;
 }
 
+.games__wrap {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
 .games__name {
   font-size: 12px;
   line-height: 16px;
@@ -445,10 +451,20 @@ ul {
   overflow: hidden;
 }
 
+.match__blur {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--black-opacity), 0.5);
+  backdrop-filter: blur(10px);
+}
+
 .match__wrap {
-  padding: 15px 20px 0;
+  padding: 15px 20px;
   width: 100%;
   border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .match__row {
@@ -613,7 +629,7 @@ ul {
   text-align: left;
   color: var(--white);
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -649,10 +665,8 @@ ul {
 }
 
 .match__decor {
-  height: 80px;
-  padding: 30px 10px 10px;
-  background: url('../img/background-match-tournament.png') top no-repeat;
-  background-size: cover;
+  height: 55px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
