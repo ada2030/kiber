@@ -722,7 +722,7 @@ ul {
   justify-content: center;
   transition: 0.3s;
   cursor: pointer;
-  border-radius: 0 10px 0 10px;
+  border-radius: 0 10px 10px 0;
 }
 
 .slider--games .slider__arrows-link:hover {
@@ -730,13 +730,13 @@ ul {
   background-color: var(--dark-blue);
 }
 
-.slider--games .slider__arrows-link--right {
+.slider--games .slider__arrows-link--left {
   left: 0;
   right: auto;
   border-radius: 10px 0 0 10px;
 }
 
-.slider--games .slider__arrows-link--right .slider__arrow {
+.slider--games .slider__arrows-link--left .slider__arrow {
   transform: rotate(180deg);
 }
 
