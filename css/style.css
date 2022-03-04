@@ -145,7 +145,7 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  background-image: url("/img/background-body.png");
+  background-image: url("img/background-body.png");
   background-size: cover;
 }
 
@@ -651,7 +651,7 @@ ul {
 .match__decor {
   height: 80px;
   padding: 30px 10px 10px;
-  background: url("/img/background-match-tournament.png") top no-repeat;
+  background: url("img/background-match-tournament.png") top no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
