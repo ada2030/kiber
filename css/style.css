@@ -708,7 +708,13 @@ ul {
   z-index: 1;
   zoom: 0.7;
   -moz-transform: scale(0.7);
-  right: 75px;
+  right: 50px;
+}
+
+@-moz-document url-prefix() {
+  .slider--games .slider__item[data-active-slide="3"] {
+    right: 75px;
+  }
 }
 
 .slider--games .slider__arrows-link {
