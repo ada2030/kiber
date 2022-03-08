@@ -22,8 +22,8 @@ var sam = new function() {
 
             $(popupButton).click(function() {
                 event.preventDefault();
-                $(popup).toggleClass('open');
-                $(this).toggleClass('open');
+                $(popup).toggleClass('active');
+                $(this).toggleClass('active');
                 $('.js-nicescroll-main').niceScroll('.js-nicescroll-wrap', {
                     cursorcolor          : '#F05124',
                     cursorwidth          : '13px',

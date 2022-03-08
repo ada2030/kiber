@@ -11,6 +11,17 @@
 120*120
 60*60
 -->
+<!--
+Пропорция картинок <лого турнира> ratio="1" (1/1)
+размеры:
+80*80
+-->
+
+<!--
+Пропорция картинок <задний фон турнира> ratio="1.77" (16/9)
+размеры:
+900x510
+-->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -26,11 +37,153 @@
     <main class="main">
         <div class="content">
             <div class="esports">
-                <div class="esports__block esports__block--gray">
+                <div class="esports__wrap mrg-btm-60">
+                    <div class="slider slider--big">
+                        <ul class="slider__list js-tiny-slider"
+                            data-controls="false"
+                            data-nav="true"
+                            data-nav-container=".js-slider-nav"
+                            data-items="1"
+                            data-loop="true"
+                            data-autoplay="true"
+                            data-autoplay-timeout="5000"
+                            data-autoplay-over-pause="true"
+                            data-speed="1000"
+                            data-touch="true"
+                            data-mouse-drag="true"
+                            data-mode="carousel"
+                        >
+                            <li class="slider__item">
+                                <div class="tournament" style="background-image: url('img/dev/dev-tournament-900x510.png')">
+                                    <div class="tournament__blur">
+                                        <div class="tournament__wrap">
+                                            <div class="tournament__group">
+                                                <div class="tournament__info mrg-btm-20">
+                                                    <svg class="tournament__icon" width="20" height="20"><use xlink:href="img/sprite.svg#cup"></use></svg>
+                                                    <p class="tournament__text">Турниры</p>
+                                                    <div class="tournament__game-wrap">
+                                                        <img class="tournament__game" src="img/default/default-game.svg" width="20" height="20" alt="Дефолтное лого игры">
+                                                    </div>
+                                                    <p class="status status--announce">Анонсирован</p>
+                                                </div>
+                                                <p class="tournament__date">13 января, 19:00 - 13 января, 23:30</p>
+                                            </div>
+                                            <img class="tournament__logo" src="img/dev/dev-tournament-logo-80x80.png" width="80" height="80" alt="Лого турнира">
+                                        </div>
+                                        <p class="tournament__title">Всероссийская интеллектуально-киберспортивная лига</p>
+                                        <div class="tournament__bottom">
+                                            <div class="tournament__timer">
+                                                тут будет таймер
+                                            </div>
+                                            <a class="button button--orange" href="#">Регистрация</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider__item">
+                                <div class="tournament" style="background-image: url('img/dev/dev-tournament-900x510.png')">
+                                    <div class="tournament__blur">
+                                        <div class="tournament__wrap">
+                                            <div class="tournament__group">
+                                                <div class="tournament__info mrg-btm-20">
+                                                    <svg class="tournament__icon" width="20" height="20"><use xlink:href="img/sprite.svg#cup"></use></svg>
+                                                    <p class="tournament__text">Турниры</p>
+                                                    <div class="tournament__game-wrap">
+                                                        <img class="tournament__game" src="img/default/default-game.svg" width="20" height="20" alt="Дефолтное лого игры">
+                                                    </div>
+                                                    <p class="status status--registration">Идет регистрация</p>
+                                                </div>
+                                                <p class="tournament__date">13 января, 19:00 - 13 января, 23:30</p>
+                                            </div>
+                                            <img class="tournament__logo" src="img/dev/dev-tournament-logo-80x80.png" width="80" height="80" alt="Лого турнира">
+                                        </div>
+                                        <p class="tournament__title">Всероссийская интеллектуально-киберспортивная лига и еще одна строчка для тестирования дизайна</p>
+                                        <div class="tournament__bottom">
+                                            <div class="tournament__timer">
+                                                тут будет таймер
+                                            </div>
+                                            <a class="button button--orange" href="#">Регистрация</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider__item">
+                                <div class="tournament" style="background-image: url('img/dev/dev-tournament-900x510.png')">
+                                    <div class="tournament__blur">
+                                        <div class="tournament__wrap">
+                                            <div class="tournament__group">
+                                                <div class="tournament__info mrg-btm-20">
+                                                    <svg class="tournament__icon" width="20" height="20"><use xlink:href="img/sprite.svg#cup"></use></svg>
+                                                    <p class="tournament__text">Турниры</p>
+                                                    <div class="tournament__game-wrap">
+                                                        <img class="tournament__game" src="img/default/default-game.svg" width="20" height="20" alt="Дефолтное лого игры">
+                                                    </div>
+                                                    <p class="status status--active">Идет</p>
+                                                </div>
+                                                <p class="tournament__date">13 января, 19:00 - 13 января, 23:30</p>
+                                            </div>
+                                            <img class="tournament__logo" src="img/dev/dev-tournament-logo-80x80.png" width="80" height="80" alt="Лого турнира">
+                                        </div>
+                                        <p class="tournament__title">Всероссийская интеллектуально-киберспортивная лига и еще одна строчка для тестирования дизайна</p>
+                                        <div class="tournament__bottom">
+                                            <div class="tournament__timer">
+                                                тут будет таймер
+                                            </div>
+                                            <a class="button button--orange" href="#">Регистрация</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider__item">
+                                <div class="tournament" style="background-image: url('img/dev/dev-tournament-900x510.png')">
+                                    <div class="tournament__blur">
+                                        <div class="tournament__wrap">
+                                            <div class="tournament__group">
+                                                <div class="tournament__info mrg-btm-20">
+                                                    <svg class="tournament__icon" width="20" height="20"><use xlink:href="img/sprite.svg#cup"></use></svg>
+                                                    <p class="tournament__text">Турниры</p>
+                                                    <div class="tournament__game-wrap">
+                                                        <img class="tournament__game" src="img/default/default-game.svg" width="20" height="20" alt="Дефолтное лого игры">
+                                                    </div>
+                                                    <p class="status status--complete">Завершен</p>
+                                                </div>
+                                                <p class="tournament__date">13 января, 19:00 - 13 января, 23:30</p>
+                                            </div>
+                                            <img class="tournament__logo" src="img/dev/dev-tournament-logo-80x80.png" width="80" height="80" alt="Лого турнира">
+                                        </div>
+                                        <p class="tournament__title">Всероссийская интеллектуально-киберспортивная лига и еще одна строчка для тестирования дизайна</p>
+                                        <div class="tournament__bottom">
+                                            <div class="tournament__timer">
+                                                тут будет таймер
+                                            </div>
+                                            <a class="button button--orange" href="#">Регистрация</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="slider__nav js-slider-nav">
+                            <li class="slider__nav-item">
+                                <div class="slider__nav-wrap"></div>
+                            </li>
+                            <li class="slider__nav-item">
+                                <div class="slider__nav-wrap"></div>
+                            </li>
+                            <li class="slider__nav-item">
+                                <div class="slider__nav-wrap"></div>
+                            </li>
+                            <li class="slider__nav-item">
+                                <div class="slider__nav-wrap"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="esports__login"></div>
+                </div>
+                <div class="esports__block esports__block--gray mrg-btm-60">
                     <div class="games mrg-btm-80">
                         <ul class="games__list">
                             <li class="games__item">
-                                <a class="games__link" href="#">
+                                <a class="games__link active" href="#">
                                     <p class="games__all">Все игры</p>
                                 </a>
                             </li>
@@ -148,16 +301,16 @@
                         </ul>
                         <div class="games__popup js-nicescroll-main js-popup">
                             <ul class="games__units js-nicescroll-wrap">
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <img class="games__img" src="img/default/default-game.svg" width="40" height="40" alt="Дефолтное лого игры">
                                         <div class="games__wrap">
                                             <p class="games__name">Очень длинное название игры в две строчки</p>
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -168,8 +321,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -180,8 +333,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -192,8 +345,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -204,8 +357,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -216,8 +369,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -228,8 +381,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -240,8 +393,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -252,8 +405,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -264,8 +417,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -276,8 +429,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -288,8 +441,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -300,8 +453,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -312,8 +465,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -324,8 +477,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -336,8 +489,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -348,8 +501,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -360,8 +513,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -372,8 +525,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -384,8 +537,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -396,8 +549,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -408,8 +561,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -420,8 +573,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -432,8 +585,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -444,8 +597,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="games__unit">
-                                    <a class="games__game" href="#">
+                                <li class="games__item">
+                                    <a class="games__link" href="#">
                                         <picture class="games__picture">
                                             <img class="games__img" src="img/dev/dev-game-logo-40x40.png"
                                                  srcset="img/dev/dev-game-logo-80x80.png 2x"
@@ -459,7 +612,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="top mrg-btm-20">
+                    <div class="top mrg-btm-30">
                         <div class="top__title">
                             Ключевые матчи
                             <span class="top__sum">(34 матча)</span>
@@ -478,7 +631,7 @@
                             data-nav="false"
                             data-items="4"
                             data-start-index="0"
-                            data-loop="true"
+                            data-loop="false"
                             data-autoplay="true"
                             data-autoplay-timeout = "8000"
                             data-swipe-angle="false"
@@ -500,7 +653,7 @@
                             }'
                         >
 <!--                        этапы турнира строго в цифрах 1/32, 1/16 и т.д, если словами, то может не поместиться, только финал можно написать, потому что слово короче-->
-<!--                        статусов матча может быть 4: анонсирован - match__status--announce, идет регистрация - match__status--registration, идет - match__status--active, завершен - match__status--complete.-->
+<!--                        статусов матча может быть 4: анонсирован - status--announce, идет регистрация - status--registration, идет - status--active, завершен - status--complete.-->
 <!--                        для команды, которая выиграла вешается дополнительный класс - match__team--win-->
                             <li class="slider__item">
                                 <a class="match" href="#" style="background-image: url('img/dev/dev-match-background-440-250.png')">
@@ -513,7 +666,7 @@
                                                              srcset="img/dev/dev-game-logo-40x40.png 2x"
                                                              width="20" height="20" alt="Лого игры">
                                                     </picture>
-                                                    <p class="match__status match__status--complete">Завершён</p>
+                                                    <p class="status status--complete">Завершён</p>
                                                 </div>
                                                 <div class="match__wrapper">
                                                     <p class="match__tour">1/4</p>
@@ -571,7 +724,7 @@
                                                              srcset="img/dev/dev-game-logo-40x40.png 2x"
                                                              width="20" height="20" alt="Лого игры">
                                                     </picture>
-                                                    <p class="match__status match__status--active">Идет</p>
+                                                    <p class="status status--active">Идет</p>
                                                 </div>
                                                 <div class="match__wrapper">
                                                     <p class="match__tour">1/32</p>
@@ -629,7 +782,7 @@
                                                              srcset="img/dev/dev-game-logo-40x40.png 2x"
                                                              width="20" height="20" alt="Лого игры">
                                                     </picture>
-                                                    <p class="match__status match__status--registration">Идёт регистрация</p>
+                                                    <p class="status status--registration">Идёт регистрация</p>
                                                 </div>
                                                 <div class="match__wrapper">
                                                     <p class="match__tour">1/4</p>
@@ -687,7 +840,7 @@
                                                              srcset="img/dev/dev-game-logo-40x40.png 2x"
                                                              width="20" height="20" alt="Лого игры">
                                                     </picture>
-                                                    <p class="match__status match__status--announce">Анонсирован</p>
+                                                    <p class="status status--announce">Анонсирован</p>
                                                 </div>
                                                 <div class="match__wrapper">
                                                     <p class="match__tour">1/4</p>
@@ -745,7 +898,7 @@
                                                              srcset="img/dev/dev-game-logo-40x40.png 2x"
                                                              width="20" height="20" alt="Лого игры">
                                                     </picture>
-                                                    <p class="match__status match__status--complete">Завершён</p>
+                                                    <p class="status status--complete">Завершён</p>
                                                 </div>
                                                 <div class="match__wrapper">
                                                     <p class="match__tour">1/4</p>
@@ -806,6 +959,184 @@
                             </a>
                         </div>
                     </section>
+                </div>
+                <div class="top mrg-btm-30">
+                    <div class="top__title">
+                        Свежие медиа
+                        <span class="top__sum">(23 новых публикации)</span>
+                    </div>
+                </div>
+                <div class="esports__block esports__block--dark">
+                    <div class="slider slider--publication">
+<!--                    лимит выводимых слайдов 6 штук, больше нельзя, а то слайдер сломается-->
+                        <ul class="slider__list js-tiny-slider mrg-btm-40"
+                            data-controls-container=".js-slider-controls-publication"
+                            data-controls="true"
+                            data-nav="true"
+                            data-nav-container=".js-slider-nav-publication"
+                            data-items="1"
+                            data-loop="true"
+                            data-autoplay="true"
+                            data-autoplay-timeout="5000"
+                            data-autoplay-over-pause="true"
+                            data-speed="1000"
+                            data-mouse-drag="true"
+                            data-mode="carousel"
+                        >
+                            <li class="slider__item">
+                                <a class="publication" href="#">
+                                    <img class="publication__img" src="img/dev/dev-media-1240x700.png" width="1240" height="700" alt="Медиа">
+                                    <div class="publication__blur">
+                                        <div class="publication__wrap">
+                                            <img class="publication__img" src="img/dev/dev-media-1240x700.png" width="1240" height="700" alt="Медиа">
+                                            <div class="publication__tournament">
+                                                <svg class="publication__icon" width="20" height="20"><use xlink:href="img/sprite.svg#cup"></use></svg>
+                                                <p class="publication__text">Чемпионат РФС по Интерактивному футболу</p>
+                                            </div>
+                                        </div>
+                                        <div class="publication__info">
+                                            <p class="publication__title">Конференция Киберспорт 2030</p>
+                                            <p class="publication__date">Опубликован 13.12.2021 г.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slider__item">
+                                <a class="publication" href="#">
+                                    <img class="publication__img" src="img/dev/dev-media-1240x700.png" width="1240" height="700" alt="Медиа">
+                                    <div class="publication__blur">
+                                        <div class="publication__wrap">
+                                            <img class="publication__img" src="img/dev/dev-media-1240x700.png" width="1240" height="700" alt="Медиа">
+                                            <div class="publication__tournament">
+                                                <svg class="publication__icon" width="20" height="20"><use xlink:href="img/sprite.svg#cup"></use></svg>
+                                                <p class="publication__text">Чемпионат РФС по Интерактивному футболу очень длинное название в несколько строчек</p>
+                                            </div>
+                                        </div>
+                                        <div class="publication__info">
+                                            <p class="publication__title">Конференция Киберспорт 2030 очень длинное название в несколько строчек очень длинное название в несколько строчек очень длинное название в несколько строчек очень длинное название в несколько строчек очень длинное название в несколько строчек</p>
+                                            <p class="publication__date">Опубликован 13.12.2021 г.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slider__item">
+                                <a class="publication" href="#">
+                                    <img class="publication__img" src="img/dev/dev-media-1240x700.png" width="1240" height="700" alt="Медиа">
+                                    <div class="publication__blur">
+                                        <div class="publication__wrap">
+                                            <img class="publication__img" src="img/dev/dev-media-1240x700.png" width="1240" height="700" alt="Медиа">
+                                            <div class="publication__tournament">
+                                                <svg class="publication__icon" width="20" height="20"><use xlink:href="img/sprite.svg#cup"></use></svg>
+                                                <p class="publication__text">Чемпионат РФС по Интерактивному футболу</p>
+                                            </div>
+                                        </div>
+                                        <div class="publication__info">
+                                            <p class="publication__title">Конференция Киберспорт 2030</p>
+                                            <p class="publication__date">Опубликован 13.12.2021 г.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slider__item">
+                                <a class="publication" href="#">
+                                    <img class="publication__img" src="img/dev/dev-media-1240x700.png" width="1240" height="700" alt="Медиа">
+                                    <div class="publication__blur">
+                                        <div class="publication__wrap">
+                                            <img class="publication__img" src="img/dev/dev-media-1240x700.png" width="1240" height="700" alt="Медиа">
+                                            <div class="publication__tournament">
+                                                <svg class="publication__icon" width="20" height="20"><use xlink:href="img/sprite.svg#cup"></use></svg>
+                                                <p class="publication__text">Чемпионат РФС по Интерактивному футболу</p>
+                                            </div>
+                                        </div>
+                                        <div class="publication__info">
+                                            <p class="publication__title">Конференция Киберспорт 2030</p>
+                                            <p class="publication__date">Опубликован 13.12.2021 г.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slider__item">
+                                <a class="publication" href="#">
+                                    <img class="publication__img" src="img/dev/dev-media-1240x700.png" width="1240" height="700" alt="Медиа">
+                                    <div class="publication__blur">
+                                        <div class="publication__wrap">
+                                            <img class="publication__img" src="img/dev/dev-media-1240x700.png" width="1240" height="700" alt="Медиа">
+                                            <div class="publication__tournament">
+                                                <svg class="publication__icon" width="20" height="20"><use xlink:href="img/sprite.svg#cup"></use></svg>
+                                                <p class="publication__text">Чемпионат РФС по Интерактивному футболу очень длинное название в несколько строчек</p>
+                                            </div>
+                                        </div>
+                                        <div class="publication__info">
+                                            <p class="publication__title">Конференция Киберспорт 2030 очень длинное название в несколько строчек очень длинное название в несколько строчек очень длинное название в несколько строчек очень длинное название в несколько строчек очень длинное название в несколько строчек</p>
+                                            <p class="publication__date">Опубликован 13.12.2021 г.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slider__item">
+                                <a class="publication" href="#">
+                                    <img class="publication__img" src="img/dev/dev-media-1240x700.png" width="1240" height="700" alt="Медиа">
+                                    <div class="publication__blur">
+                                        <div class="publication__wrap">
+                                            <img class="publication__img" src="img/dev/dev-media-1240x700.png" width="1240" height="700" alt="Медиа">
+                                            <div class="publication__tournament">
+                                                <svg class="publication__icon" width="20" height="20"><use xlink:href="img/sprite.svg#cup"></use></svg>
+                                                <p class="publication__text">Чемпионат РФС по Интерактивному футболу</p>
+                                            </div>
+                                        </div>
+                                        <div class="publication__info">
+                                            <p class="publication__title">Конференция Киберспорт 2030</p>
+                                            <p class="publication__date">Опубликован 13.12.2021 г.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="slider__nav js-slider-nav-publication">
+                            <li class="slider__nav-item">
+                                <div class="slider__nav-wrap">
+                                    <img class="slider__nav-img" src="img/dev/dev-media-145x82png.png" width="145" height="82" alt="Медиа в навигации">
+                                </div>
+                            </li>
+                            <li class="slider__nav-item">
+                                <div class="slider__nav-wrap">
+                                    <img class="slider__nav-img" src="img/dev/dev-media-145x82png.png" width="145" height="82" alt="Медиа в навигации">
+                                </div>
+                            </li>
+                            <li class="slider__nav-item">
+                                <div class="slider__nav-wrap">
+                                    <img class="slider__nav-img" src="img/dev/dev-media-145x82png.png" width="145" height="82" alt="Медиа в навигации">
+                                </div>
+                            </li>
+                            <li class="slider__nav-item">
+                                <div class="slider__nav-wrap">
+                                    <img class="slider__nav-img" src="img/dev/dev-media-145x82png.png" width="145" height="82" alt="Медиа в навигации">
+                                </div>
+                            </li>
+                            <li class="slider__nav-item">
+                                <div class="slider__nav-wrap">
+                                    <img class="slider__nav-img" src="img/dev/dev-media-145x82png.png" width="145" height="82" alt="Медиа в навигации">
+                                </div>
+                            </li>
+                            <li class="slider__nav-item">
+                                <div class="slider__nav-wrap">
+                                    <img class="slider__nav-img" src="img/dev/dev-media-145x82png.png" width="145" height="82" alt="Медиа в навигации">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="slider__arrows-block js-slider-controls-publication">
+                            <a class="slider__arrows-link slider__arrows-link--left">
+                                <svg class="slider__arrow" width="14" height="22">
+                                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </a>
+                            <a class="slider__arrows-link">
+                                <svg class="slider__arrow" width="14" height="22">
+                                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
