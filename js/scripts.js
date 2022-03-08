@@ -11,6 +11,7 @@ var sam = new function() {
     self.init = function() {
         self.popup.init();
         self.tinySlider.init();
+        self.tabs.init();
     };
 
     this.popup = new function() {
@@ -115,8 +116,8 @@ var sam = new function() {
                     axis: data['axis'] ? data['axis'] : 'horizontal', //['horizontal', 'vertical'] горизонтальная/вертикальная прокрутка
                     gutter: data['gutter'] ? data['gutter'] : 0,            //расстояние между слайдами, в px
                     center: data['center'] ? data['center'] : false,        //центрирование активного слайда
-                    mouseDrag: data['mouseDrag'] ? data['center'] : false,        //изменение слайдов путем их перетаскивания
-                    touch: data['mouseDrag'] ? data['center'] : false,        //активирует обнаружение ввода для сенсорных устройств.
+                    mouseDrag: data['mouseDrag'] ? data['mouseDrag'] : false,        //изменение слайдов путем их перетаскивания
+                    touch: data['touch'] ? data['touch'] : false,        //активирует обнаружение ввода для сенсорных устройств.
 
                     //Автопрокрутка
                     autoplay: data['autoplay'] ? data['autoplay'] : false,     //автопрокрутка
@@ -164,6 +165,83 @@ var sam = new function() {
             $(slider).removeClass('js-already-init');
             that.sliders[k].destroy();
             delete that.sliders[k];
+        };
+
+        this.callbacks = {};
+    };
+    this.tabs = new function() {
+        let that = this;
+
+        this.init = function() {
+            $('.js-tabs:not(.js-already-init)').each(function() {
+                that.build(this);
+            });
+        };
+
+        this.customize = {
+            li: function(li) {
+                if ($(li).hasClass('js-active')) {
+                    $(li).addClass('tabs__item--active');
+                } else {
+                    $(li).removeClass('tabs__item--active');
+                }
+            },
+            tab: function(tab) {
+                if ($(tab).hasClass('js-show')) {
+                    $(tab).addClass('tabs__pane--active');
+                } else {
+                    $(tab).removeClass('tabs__pane--active');
+                }
+            }
+        };
+
+        this.build = function(ul) {
+            if (!$(ul).data('cont-id') && !$($(ul).data('cont-selector'))) {
+                return false;
+            }
+
+            let tabsCont;
+            if ($(ul).data('cont-id')) {
+                tabsCont = $('#' + $(ul).data('cont-id'));
+            } else {
+                tabsCont = $($(ul).data('cont-selector'));
+            }
+
+            $(ul).find('li a').click(function() {
+                let li = $(this).parents('li');
+                $(ul).find('li.js-active').removeClass('js-active');
+                $(li).addClass('js-active');
+                $(ul).find('li').each(function() {
+                    that.customize.li(this);
+                });
+
+                let tabContSelector;
+
+                if ($(li).data('tab-id')) {
+                    tabContSelector = '>.js-tab-cont#' + $(li).data('tab-id');
+                } else if ($(ul).data('tab-selector')) {
+                    tabContSelector = '>.js-tab-cont' + $(li).data('tab-selector');
+                }
+
+                let tab = $(tabsCont).find(tabContSelector);
+                $(tabsCont).find('>.js-tab-cont.js-show').removeClass('js-show').hide();
+                $(tab).addClass('js-show').show();
+                $.each($(tabsCont).find('>.js-tab-cont'), function() {
+                    that.customize.tab(this);
+                });
+
+                let tabsCallback = $(ul).data('callback');
+                if (tabsCallback && that.callbacks[tabsCallback]) {
+                    that.callbacks[tabsCallback](ul);
+                }
+
+            });
+
+            $(ul).addClass('js-already-init');
+        };
+
+        this.destroy = function(ul) {
+            $(ul).find('li a').off('click');
         };
 
         this.callbacks = {};
