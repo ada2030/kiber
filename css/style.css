@@ -1120,16 +1120,16 @@ ul {
   fill: var(--orange);
 }
 
-.tabs {
+.tabs--words {
   position: relative;
 }
 
-.tabs__navigation {
+.tabs--words .tabs__navigation {
   display: flex;
   gap: 45px;
 }
 
-.tabs__link {
+.tabs--words .tabs__link {
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
@@ -1138,8 +1138,8 @@ ul {
   cursor: pointer;
 }
 
-.tabs__item--active .tabs__link,
-.tabs__link:hover {
+.tabs--words .tabs__item--active .tabs__link,
+.tabs--words .tabs__link:hover {
   transition: 0.3s;
   color: var(--orange);
 }
