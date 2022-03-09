@@ -182,7 +182,8 @@ ul {
   display: flex;
   flex-grow: 1;
   gap: 30px;
-  width: 1360px;
+  max-width: 1360px;
+  width: 100%;
   margin:  0 auto;
   padding: 0 30px;
 }
@@ -269,6 +270,10 @@ ul {
   padding: 0 30px;
 }
 
+.esports {
+  max-width: 100%;
+}
+
 .esports__block {
   border-radius: 20px;
   padding: 30px;
@@ -280,6 +285,10 @@ ul {
 
 .esports__block--dark {
   background: rgba(var(--dark-opacity), 0.3);
+}
+
+.esports__wrap {
+  margin: 0 0 60px;
 }
 
 .games {
@@ -434,6 +443,7 @@ ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
+  white-space: nowrap;
 }
 
 .top__link {
@@ -446,6 +456,7 @@ ul {
 }
 
 .top__wrap {
+  flex-shrink: 0;
   width: 20px;
   height: 20px;
   display: flex;
@@ -476,7 +487,7 @@ ul {
 }
 
 .match {
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -497,7 +508,7 @@ ul {
   padding: 15px 20px;
   width: 100%;
   border-radius: 20px;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -592,6 +603,7 @@ ul {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  flex-grow: 1;
 }
 
 .match__logo-team {
@@ -757,12 +769,12 @@ ul {
   z-index: 1;
   zoom: 0.7;
   -moz-transform: scale(0.7);
-  right: 50px;
+  right: 75px;
 }
 
 @-moz-document url-prefix() {
   .slider--games .slider__item[data-active-slide="4"] {
-    right: 75px;
+    right: 95px;
   }
 }
 
@@ -830,7 +842,7 @@ ul {
   box-shadow: 0 30px 24px rgba(1, 15, 2, 0.08), 0 15px 12px rgba(1, 15, 2, 0.07), 0 8px 8px rgba(1, 15, 2, 0.055), 0 5px 4px rgba(1, 15, 2, 0.04), 0 2px 1px rgba(1, 15, 2, 0.03);
   border-radius: 15px;
   overflow: hidden;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -918,7 +930,7 @@ ul {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 10px;
+  gap: 15px;
 }
 
 .slider--big .slider__nav {

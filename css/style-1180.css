@@ -1,0 +1,38 @@
+@media (max-width: 1180px) {
+    .esports__login {
+        display: none;
+    }
+
+    .slider--big {
+        width: 100%;
+    }
+
+    .slider--games {
+        padding: 0 55px;
+    }
+
+    .slider--games .slider__list {
+        display: block;
+    }
+
+    .slider--games .slider__item {
+        zoom: 1;
+        -moz-transform: scale(1);
+    }
+
+    .slider--games .slider__item[data-active-slide="1"],
+    .slider--games .slider__item[data-active-slide="2"],
+    .slider--games .slider__item[data-active-slide="3"],
+    .slider--games .slider__item[data-active-slide="4"] {
+        zoom: 1;
+        -moz-transform: scale(1);
+    }
+
+    .slider--games .slider__item[data-active-slide="4"] {
+        right: auto;
+    }
+
+    .match {
+        width: 100%;
+    }
+}

@@ -1,0 +1,135 @@
+@media (max-width: 480px) {
+    .main {
+        padding: 0 15px;
+    }
+
+    .mrg-btm-20 {
+        margin: 0 0 15px;
+    }
+
+    .mrg-btm-30 {
+        margin: 0 0 15px;
+    }
+
+    .status {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 3px 5px;
+    }
+
+    .top {
+        padding: 10px 15px 10px 0;
+    }
+
+    .top__title {
+        font-size: 18px;
+        line-height: 20px;
+        align-items: baseline;
+    }
+
+    .top__sum {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .top__text {
+        display: none;
+    }
+
+    .slider--big .slider__item {
+        height: 410px;
+    }
+
+    .tournament__blur {
+        padding: 15px;
+    }
+
+    .tournament__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tournament .button {
+        width: 100%;
+    }
+
+    .tournament__logo {
+        display: none;
+    }
+
+    .tournament__text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .tournament__date {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .tournament__title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .slider--games {
+        padding: 0;
+    }
+
+    .slider--games .slider__arrows-link {
+        display: none;
+    }
+
+    .match__row {
+        display: none;
+    }
+
+    .match__wrap {
+        padding: 10px;
+    }
+
+    .match__scores {
+        gap: 5px;
+    }
+
+    .esports__block {
+        background: none;
+        padding: 0;
+    }
+
+    .match__decor {
+        height: 44px;
+    }
+
+    .match__tournament {
+        -webkit-line-clamp: 1;
+    }
+
+    .match__blur {
+        backdrop-filter: blur(5px);
+    }
+}
+
+@media (max-width: 400px) {
+    .tournament__info {
+        gap: 5px;
+    }
+
+    .tournament__game-wrap {
+        gap: 5px;
+    }
+
+    .match__score {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .match__name {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .match__name-wrap {
+        height: 36px;
+    }
+}

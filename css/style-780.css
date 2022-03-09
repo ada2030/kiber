@@ -1,0 +1,106 @@
+@media (max-width: 780px) {
+    .mrg-btm-30 {
+        margin: 0 0 25px;
+    }
+
+    .main {
+        padding: 0 20px;
+    }
+
+    .top {
+        padding: 10px 25px 10px 0;
+    }
+
+    .top__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .top__sum {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .top__link {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .tournament__blur {
+        padding: 25px;
+    }
+
+    .tournament__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .tournament__date {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .tournament__title {
+        font-size: 34px;
+        line-height: 42px;
+        -webkit-line-clamp: 3;
+    }
+
+    .esports__block {
+        padding: 20px;
+    }
+
+    .slider--games {
+        padding: 0 25px;
+    }
+
+    .slider--games .slider__arrows-link {
+        width: 35px;
+        right: -10px;
+    }
+
+    .slider--games .slider__arrows-link--left {
+        left: -10px;
+    }
+
+    .slider--games .slider__arrows-link:hover {
+        background-color: initial;
+    }
+
+    .match__tour {
+        display: none;
+    }
+
+    .match__location {
+        display: none;
+    }
+
+    .match__city {
+        display: none;
+    }
+
+    .match__format {
+        display: none;
+    }
+
+    .match__wrap {
+        padding: 10px 15px;
+    }
+
+    .match__item {
+        backdrop-filter: none;
+        padding: 0;
+        background-color: initial;
+    }
+
+    .match__unit {
+        width: 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    .tournament__title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
