@@ -104,6 +104,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 ul {
@@ -938,10 +939,13 @@ ul {
   height: 10px;
   border-radius: 50%;
   background-color: rgba(var(--orange-opacity), 0.3);
+  transition: 0.3s;
 }
 
-.slider--big .slider__nav-item.tns-nav-active .slider__nav-wrap {
+.slider--big .slider__nav-item.tns-nav-active .slider__nav-wrap,
+.slider--big .slider__nav-item:hover .slider__nav-wrap {
   background-color: rgba(var(--orange-opacity), 1);
+  transition: 0.3s;
 }
 
 .esports__login {
