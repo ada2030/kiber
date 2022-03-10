@@ -1,4 +1,8 @@
 @media (max-width: 1180px) {
+    .mrg-btm-60 {
+        margin: 0 0 50px;
+    }
+
     .esports__login {
         display: none;
     }

@@ -11,6 +11,10 @@
         margin: 0 0 15px;
     }
 
+    .mrg-btm-60 {
+        margin: 0 0 25px;
+    }
+
     .status {
         font-size: 12px;
         line-height: 16px;
@@ -78,6 +82,11 @@
 
     .slider--games .slider__arrows-link {
         display: none;
+    }
+
+    .slider--games .slider__nav {
+        display: flex;
+        position: static;
     }
 
     .match__row {
